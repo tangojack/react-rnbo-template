@@ -1,9 +1,10 @@
 {
   "name": "interactive-soundscape",
   "version": "0.1.0",
-  "description": "An interactive soundscape made with Max MSP, RNBO and React",
+  "description": "A React + RNBO template",
   "main": "main.js",
   "scripts": {
+    "start": "webpack serve --open --mode development",
     "build": "webpack"
   },
   "keywords": [
@@ -24,7 +25,8 @@
     "html-webpack-plugin": "^5.5.3",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "@rnbo/js": "^1.1.2",

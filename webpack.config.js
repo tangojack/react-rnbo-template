@@ -6,6 +6,10 @@ module.exports = {
     entry: path.join(__dirname, 'src', 'index.tsx'),
     output: {
         path: path.join(__dirname, 'public'),
+        filename: 'bundle.js',
+    },
+    resolve: {
+        extensions: [".tsx", ".ts", ".js"],
     },
     module: {
         rules: [
@@ -26,7 +30,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'public', 'index.html')
+            template: path.join(__dirname, 'index.ejs'),
         }),
     ],
 }
