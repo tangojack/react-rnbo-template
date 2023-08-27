@@ -1,7 +1,7 @@
 const App = () => {
   return (
-    <div className="App">
-      <h1>React Tysspescript</h1>
+    <div>
+      <h1>React Typescript</h1>
     </div>
   );
 };
