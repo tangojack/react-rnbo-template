@@ -9,19 +9,18 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules'],
-    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', 'json'],
   },
   module: {
     rules: [
       {
-        test: /\.(ts|tsx|js|jsx|json)$/,
+        test: /\.(ts|tsx|js|jsx)$/,
         exclude: path.join(__dirname, 'node_modules'),
         use: {
           loader: 'babel-loader',
         },
       },
-       {
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
